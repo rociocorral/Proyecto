@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fdfaf6;
+    color: #3e2f20;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: rgba(66, 40, 14, 0.85);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    flex-wrap: wrap;
+    border-bottom: 3px solid #aa8453;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.logo img {
+    height: 60px;
+    margin-right: 15px;
+}
+
+.raiz-andina {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.imagen_principal {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.imagen_principal img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+main {
+    padding: 30px 20px;
+}
+
+.bienvenida h1,
+.servicios h1 {
+    font-size: 32px;
+    color: #4e3825;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.bienvenida p,
+.servicios p {
+    max-width: 900px;
+    margin: 0 auto 15px auto;
+    text-align: center;
+}
+
+
+.glampings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.card-glamping {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.card-glamping:hover {
+    transform: scale(1.03);
+}
+
+.card-glamping img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-glamping .contenido {
+    padding: 15px;
+}
+
+.card-glamping h4 {
+    color: #593e2b;
+    margin-bottom: 10px;
+}
+
+.card-glamping p {
+    font-size: 15px;
+    color: #4e3a29;
+}
+
+
+footer {
+    background-color: rgba(66, 40, 14, 0.85);
+    color: white;
+    padding: 25px 20px;
+    margin-top: 40px;
+    text-align: center;
+    border-top: 3px solid #aa8453;
+}
+
+footer nav {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .logo {
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    .glampings {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.contacto {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contacto h1 {
+    font-size: 32px;
+    color: #4e3825;
+    margin-bottom: 20px;
+}
+
+.formulario-contacto {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #fff7ec;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.formulario-contacto label {
+    font-weight: bold;
+    color: #593e2b;
+    text-align: left;
+}
+
+.formulario-contacto input[type="text"],
+.formulario-contacto input[type="email"] {
+    padding: 10px;
+    border: 1px solid #d1c0a8;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+.formulario-contacto input[type="submit"] {
+    background-color: #aa8453;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    
+   
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+
